@@ -1,0 +1,23 @@
+.widget-title, .widgettitle {
+    background: linear-gradient(-90deg, #D7D7D7, #A9A9A9) repeat scroll 0 0 transparent;
+    border-bottom: 1px solid #848484;
+    border-top: 1px solid #F5F5F5;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    color: #000000;
+    display: block;
+    font: bold 14px/110% Cambria,Palatino,"Palatino Linotype","Palatino LT STD",Georgia,serif;
+    /*
+      font: bold 14px/110% "Lucida Grande",Arial,"Lucida Sans Unicode",sans-serif;
+      left: -18px;
+      top: -16px;
+      border-top-left-radius: 8px;
+      border-top-right-radius: 8px;
+      color: #333333;
+    */
+    margin: 0 0 -5px;
+    padding: 6px 18px 7px;
+    /*position: relative;*/
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.7);
+    width:auto;
+    z-index: -1 !important;
+}

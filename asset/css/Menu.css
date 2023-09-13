@@ -1,0 +1,47 @@
+﻿.Menu
+{  
+
+}
+
+.Menu ul
+{  
+    background:#FF8737;
+}
+
+.Menu ul li
+{
+    background:#FF8737 url('../img/menu_bg_orange.jpg') repeat-x;
+    text-align:center;
+    /* set width if needed.*/
+    width:130px;
+}
+
+.Menu ul li a
+{
+    color: black;
+    padding: 4px 2px 4px;
+    padding-left:8px !important;
+    border:1px solid #34ca18;
+    border-bottom: 0;
+}
+
+.Menu ul li a:hover
+{
+    background-image: none;
+}
+
+.Menu ul li a:hover
+{
+    color: White;
+}
+
+.Menu ul li a
+{
+    color: Black;
+}
+
+.IE8Fix
+{
+    z-index: 999;
+
+}

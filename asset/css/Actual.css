@@ -1,0 +1,7 @@
+﻿.login-container .login .chase-button-container .chase-button.primary-button, .chase-button-container .chase-button.primary-button {
+    background: -moz-linear-gradient(center top , #136001 0px, #348208 50%, #48960B 100%) repeat scroll 0 0 rgba(0, 0, 0, 0);
+    border: 1px solid #166302;
+    color: #FFFFFF;
+    position: relative;
+    text-shadow: -1px -1px 1.5px rgba(0, 0, 0, 0.3);
+}
