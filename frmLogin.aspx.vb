@@ -55,13 +55,18 @@ Partial Class frmLogin
                 MsgBox("Provide Correct Credentials")
             Else
                 module_user = ModuleUserData.fnCheckUserLogin(UserName.Text)
-                Session("ModuleUserId") = module_user.ModuleUserId
-                Session("Guid") = module_user.Guid
-                Session("DisplayName") = module_user.DisplayName
-                Session("UserName") = module_user.UserName
-                Session("Email") = module_user.Email
+                If module_user.UserName Is Nothing Then
+                    MsgBox("Credential mismatch")
+                    Response.Redirect("frmLogin.aspx")
+                Else
+                    Session("ModuleUserId") = module_user.ModuleUserId
+                    Session("Guid") = module_user.Guid
+                    Session("DisplayName") = module_user.DisplayName
+                    Session("UserName") = module_user.UserName
+                    Session("Email") = module_user.Email
 
-                Response.Redirect("frmInitiate.aspx")
+                    Response.Redirect("frmInitiate.aspx")
+                End If
             End If
         Catch ex As Exception
             MessageBox(ex.Message)
